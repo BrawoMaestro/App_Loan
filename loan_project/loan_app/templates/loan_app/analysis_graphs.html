@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Важливість ознак</title>
+    <link rel="stylesheet" href="{% static 'loan_app/css/styles.css' %}">
+</head>
+<body>
+    <h1>Важливість ознак моделі</h1>
+
+    <div>
+        {{ graph_html|safe }}
+    </div>
+    <div class="link-container">
+        <a href="{% url 'loan_prediction' %}">Назад до прогнозу</a>
+    </div>
+    <div>
+        <h2>Розподіл важливості ознак</h2>
+             <div>
+                {{ graph_pie_html|safe }}
+            </div>
+    </div>
+
+
+</body>
+</html>
+
+
+
+
+
+
+

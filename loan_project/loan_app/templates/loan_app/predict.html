@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Прогнозування кредиту</title>
+    <link rel="stylesheet" href="{% static 'loan_app/css/styles.css' %}">
+</head>
+<body>
+    <h1>Прогнозування кредиту</h1>
+
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Прогнозувати</button>
+    </form>
+
+    {% if result %}
+        <h2>{{ result }}</h2>
+    {% endif %}
+
+    <div class="link-container">
+        <a href="{% url 'feature_importance' %}">Переглянути важливість ознак</a>
+    </div>
+</body>
+</html>
+
+
+
+
+

@@ -1,0 +1,72 @@
+/* Загальні стилі для сторінки */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* Стиль для заголовку */
+h1 {
+    text-align: center;
+    color: #0056b3;
+}
+
+/* Стиль для форми */
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Стиль для результату */
+h2 {
+    text-align: center;
+    color: green;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* Вирівнювання посилання по центру */
+.link-container {
+    display: flex;
+    justify-content: center; /* Центрування по горизонталі */
+    margin-top: 20px;
+}
+
+/* Стиль для посилання */
+.link-container a {
+    color: red; /* Червоний колір */
+    font-weight: 900; /* Дуже жирний шрифт */
+    text-decoration: none; /* Без підкреслення */
+}
+
+/* Зміна стилю при наведенні */
+.link-container a:hover {
+    text-decoration: underline; /* Підкреслення при наведенні */
+}
+
+
